@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="products_style.css">
+    <link rel="icon" type="image/x-icon" href="../resource/favicon.png">
+    <script type="text/javascript" src="products_script.js"></script>
+</head>
+
+<body>
+
+
+    <header>
+        <div id="drop_down_menu">
+            <button id="drop_down_btn">
+                <img id = "drop_down_icon" src="../resource/menu_icon_white.png" alt="Drop Down Icon">
+            </button>
+            <div id="drop_down_list">
+                <a href="../home_page/home_page.html">Home</a>
+                <a href="../about_us_page/about_us.html">About Us</a>
+                <a href="../products_page/products.html">Products</a>
+                <a href="../location_page/location.html">Location</a>
+                <a href="../purchase_page/purchase.html">Purchase</a>
+            </div>
+        </div>
+        <div id="logo">
+            <b>
+                Chocs
+            </b>
+        </div>
+        <div id="navigation_bar">
+            <div class="nav_bar_btn">
+                <a href="../home_page/home_page.html">Home</a>
+            </div>
+            <div class="nav_bar_btn">
+                <a href="../about_us_page/about_us.html">About Us</a>
+            </div>
+            <div class="nav_bar_btn">
+                <a href="../products_page/products.html">Products</a>
+            </div>
+            <div class="nav_bar_btn">
+                <a href="../location_page/location.html">Location</a>
+            </div>
+            <div class="nav_bar_btn">
+                <a href="../purchase_page/purchase.html">Purchase</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 id = "page_title">
+            Our Products
+        </h1>
+
+        <div class="prdct_row">
+
+            <div class="prdct_container">
+
+                <div class="prdct_img_container" onclick="handleClickByIdx(0)">
+                    <img class="prdct_img" src="../resource/prdcts_1_page.png" alt="">
+                    <div class="overlay">
+                        <p>View Product</p>
+                    </div>
+                </div>
+
+                <h2>
+                    Whole Almonds
+                </h2>
+
+                <div class="prdct_size">
+                    (King Size)
+                </div>
+
+                <hr>
+
+                <h3>
+                    IDR 45,000
+                </h3>
+
+            </div>
+
+            <div class="prdct_container">
+
+                <div class="prdct_img_container" onclick="handleClickByIdx(1)">
+                    <img class="prdct_img" src="../resource/prdcts_2_page.png" alt="">
+                    <div class="overlay">
+                        <p>View Product</p>
+                    </div>
+                </div>
+
+                <h2>
+                    Special Dark
+                </h2>
+
+                <div class="prdct_size">
+                    (King Size)
+                </div>
+
+                <hr>
+
+                <h3>
+                    IDR 50,000
+                </h3>
+
+            </div>
+
+            <div class="prdct_container">
+
+                <div class="prdct_img_container" onclick="handleClickByIdx(2)">
+                    <img class="prdct_img" src="../resource/prdcts_3_page.png" alt="">
+                    <div class="overlay">
+                        <p>View Product</p>
+                    </div>
+                </div>
+
+
+                <h2>
+                    Cookies 'n' Cream
+                </h2>
+
+                <div class="prdct_size">
+                    (King Size)
+                </div>
+
+                <hr>
+
+                <h3>
+                    IDR 50,000
+                </h3>
+
+            </div>
+
+        </div>
+
+        <div class="prdct_row">
+
+            <div class="prdct_container">
+
+
+                <div class="prdct_img_container" onclick="handleClickByIdx(3)">
+                    <img class="prdct_img" src="../resource/prdcts_4_page.png" alt="">
+                    <div class="overlay">
+                        <p>View Product</p>
+                    </div>
+                </div>
+
+                <h2>
+                    Milk Chocolate
+                </h2>
+
+                <div class="prdct_size">
+                    (Standard Bar)
+                </div>
+
+                <hr>
+
+                <h3>
+                    IDR 30,000
+                </h3>
+
+            </div>
+
+            <div class="prdct_container">
+
+
+                <div class="prdct_img_container" onclick="handleClickByIdx(4)">
+                    <img class="prdct_img" src="../resource/prdcts_5_page.png" alt="">
+                    <div class="overlay">
+                        <p>View Product</p>
+                    </div>
+                </div>
+
+                <h2>
+                    Milk Chocolate
+                </h2>
+
+                <div class="prdct_size">
+                    (Snack Size)
+                </div>
+
+                <hr>
+
+                <h3>
+                    IDR 35,000
+                </h3>
+
+            </div>
+
+            <div class="prdct_container">
+
+                <div class="prdct_img_container" onclick="handleClickByIdx(5)">
+                    <img class="prdct_img" src="../resource/prdcts_6_page.png" alt="">
+                    <div class="overlay">
+                        <p>View Product</p>
+                    </div>
+                </div>
+
+                <h2>
+                    Milk Chocolate
+                </h2>
+
+                <div class="prdct_size">
+                    (World's Largest)
+                </div>
+
+                <hr>
+
+                <h3>
+                    IDR 300,000
+                </h3>
+
+            </div>
+
+        </div>
+
+        <div id="modal">
+            <div id="modal_content_container">
+                <div id="modal_close" onclick="closeButton()" >
+                    <img src="../resource/close_icon.png" alt="">
+                </div>
+
+                <div id="modal_content">
+                    <h1 id="modal_title"></h1>
+                    <p id="modal_size"></p>
+                    <!-- <div id="modal_image"></div> -->
+                    <img id = "modal_img_1" class = "modal_img" src="../resource/prdcts_1_page.png" alt="">
+                    <img id = "modal_img_2" class = "modal_img" src="../resource/prdcts_2_page.png" alt="">
+                    <img id = "modal_img_3" class = "modal_img" src="../resource/prdcts_3_page.png" alt="">
+                    <img id = "modal_img_4" class = "modal_img" src="../resource/prdcts_4_page.png" alt="">
+                    <img id = "modal_img_5" class = "modal_img" src="../resource/prdcts_5_page.png" alt="">
+                    <img id = "modal_img_6" class = "modal_img" src="../resource/prdcts_6_page.png" alt="">
+    
+                    <p id="modal_description"></p>
+                    <hr>
+                    <h2 id="modal_price"></h2>
+                </div>
+                
+            </div>
+        </div>
+
+        
+
+    </main>
+
+    <footer>
+
+        <ul id="footer_icon_list">
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <img id="twitter_img" src="../resource/twitter_icon.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img id="facebook_img" src="../resource/facebook_icon.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img id="instagram_img" src="../resource/instagram_icon.png " alt="">
+                </a>
+            </li>
+            <li>
+                <a href="http://whatsapp.com/" target="_blank">
+                    <img id="whatsapp_img" src="../resource/whatsapp_icon.png" alt="">
+                </a>
+            </li>
+        </ul>
+
+        <p>
+            Copyright 2022
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

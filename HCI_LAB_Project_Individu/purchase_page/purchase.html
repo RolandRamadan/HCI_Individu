@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <link rel="stylesheet" href="purchase_style.css">
+    <link rel="icon" type="image/x-icon" href="../resource/favicon.png">
+    <script type="text/javascript" src="purchase_script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="drop_down_menu">
+            <button id="drop_down_btn">
+                <img id = "drop_down_icon" src="../resource/menu_icon_white.png" alt="Drop Down Icon">
+            </button>
+            <div id="drop_down_list">
+                <a href="../home_page/home_page.html">Home</a>
+                <a href="../about_us_page/about_us.html">About Us</a>
+                <a href="../products_page/products.html">Products</a>
+                <a href="../location_page/location.html">Location</a>
+                <a href="../purchase_page/purchase.html">Purchase</a>
+            </div>
+        </div>
+        <div id="logo">
+            <b>
+                Chocs
+            </b>
+        </div>
+        <div id="navigation_bar">
+            <div class="nav_bar_btn">
+                <a href="../home_page/home_page.html">Home</a>
+            </div>
+            <div class="nav_bar_btn">
+                <a href="../about_us_page/about_us.html">About Us</a>
+            </div>
+            <div class="nav_bar_btn">
+                <a href="../products_page/products.html">Products</a>
+            </div>
+            <div class="nav_bar_btn">
+                <a href="../location_page/location.html">Location</a>
+            </div>
+            <div class="nav_bar_btn">
+                <a href="../purchase_page/purchase.html">Purchase</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 id = "page_title">
+            Purchase
+        </h1>
+
+        <div id = "purchase_container">
+
+            <form id = "register_form" name="register">
+
+                <div class = "input_container">
+                    <label>Name</label>
+                    <input name="name" placeholder="John Doe">
+                    <div id="error1" class = "error_msg"></div>
+                </div>
+
+                <div class = "input_container">
+                    <label>Phone Number</label>
+                    <input name="phone_number" placeholder="08XXXXXXXX">
+                    <div id="error2" class = "error_msg"></div>
+                </div>
+                
+                <div class = "input_container">
+                    <label>Address</label>
+                    <input name="address" placeholder="Cempaka Street Number 123">
+                    <div id="error3" class = "error_msg"></div>
+                </div>
+
+                <div class = "input_container">
+                    <label>E-mail</label>
+                    <input name="email" placeholder="johndoe@gmail.com">
+                    <div id="error4" class = "error_msg"></div>
+                </div>
+
+                <div class = "input_container">
+                    <label>Product</label>
+                    <select name="prdct_type" id="prdct_form">
+                        <option>Select Product</option>
+                        <option>Whole Almonds (King Size)</option>
+                        <option>Special Dark (King Size)</option>
+                        <option>Cookies 'n' Creme (King Size)</option>
+                        <option>Milk Chocolate (Standard Bar)</option>
+                        <option>Milk Chocolate (Snack Size)</option>
+                        <option>Milk Chocolate (World's Largest)</option>
+                    </select>
+                    <div id="error5" class = "error_msg"></div>
+                </div>
+
+
+                <div class = "input_container">
+                    <label>Quantity</label>
+                    <input name="qty" type="number" placeholder="0">
+                    <div id="error6" class = "error_msg"></div>
+                </div>
+                
+                <div id="submit_btn">
+                    <input type="button" value="Order" onclick="validate()">
+                </div>
+                
+        
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+
+        <ul id="footer_icon_list">
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <img id="twitter_img" src="../resource/twitter_icon.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img id="facebook_img" src="../resource/facebook_icon.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img id="instagram_img" src="../resource/instagram_icon.png " alt="">
+                </a>
+            </li>
+            <li>
+                <a href="http://whatsapp.com/" target="_blank">
+                    <img id="whatsapp_img" src="../resource/whatsapp_icon.png" alt="">
+                </a>
+            </li>
+        </ul>
+
+        <p>
+            Copyright 2022
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
